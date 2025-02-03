@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snakes & Ladders</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    .coin {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%; /* Adds border radius */
+    position: absolute;
+    transition: transform 0.3s ease;
+    border: 2px solid black; /* Adds black border */
+    background-color: #f1c40f; /* Example: yellow background for the coin */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: white;
+}
+
+.player1 {
+    background-color: red;
+}
+
+.player2 {
+    background-color: blue;
+}
+    </style>
+</head>
+<body>
+    <!-- board by neeti -->
+    <nav id="navbar">
+        <div id="logo">
+            <img src="user_logo.png" alt="User Logo" id="userLogo">
+        </div>
+        <h1 id="heading">Snakes & Ladders</h1>
+        <div id="navbar-links">
+            <a href="#scoreboard" class="nav-link">Scoreboard</a>
+            <button id="exitBtn">Exit</button>
+        </div>
+    </nav>
+    
+    
+    <div id="board" class="board">
+        <!-- Coins for Player 1 and Player 2 -->
+        <div id="coin1" class="coin player1"></div>
+        <div id="coin2" class="coin player2"></div>
+    </div>
+    <div class="status">
+        <p id="status">Game not started</p>
+    </div>
+    <div id="controls">
+    <button id="startGameBtn">start</button>
+    
+        <button id="player1RollBtn">Player 1 Roll</button>
+        <button id="player2RollBtn">Player 2 Roll</button>
+    </div>
+    
+    <div id="dice-container">
+        <div class="dice" id="dice"></div>
+    </div>
+    
+    <script src="script2.js"></script>
+</body>
+</html>
+
+
